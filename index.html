@@ -1,1 +1,89 @@
-Hello World
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <title>Claire Hornig - Web Developer</title>
+    </head>
+    <body>
+        <nav class="animated">
+            <a class="nav-link" href="#about-me">About Me</a>
+            <a class="nav-link" href="#projects">Selected Projects</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>    
+        <div class="welcome-div animated">
+            <span class="welcome-text-large animated">Welcome!</span>
+            <span class="welcome-text-small animated">I'm Claire, a web developer with a passion for making cool things and learning cool things.
+            </span>
+        </div>
+        <main>
+        
+        
+        <!-- Optimize CSS
+         Stop the flickers?
+         And don't forget responsive design
+         And section elements, etc.
+        -->
+        
+        
+            <div class="see-below animated">Learn more about me below...</div> 
+            <div class="divider"></div>
+            <section>
+                <p class="section-header" id="about-me">About Me</p>
+                <img src="img/me.jpg">
+                <p class="section-text">
+                    I'm a web developer, writer, gamer, and unabashed nerd from New Hampshire.  I know HTML, CSS, JavaScript, and am familiar with Bootstrap, AJAX, and Sass.  I believe the key to creating good content is understanding what makes content good: not just how it works, but why.
+                </p>
+                <p class="section-text">
+                    My hobbies include reading, weight-lifting, and playing XCOM for the 208th time.  I really like to talk about '50s sci-fi movies and Battlestar Galactica.  If you would like to talk to me about '50s sci-fi movies and Battlestar Galactica–or, of course, web development–feel free to <a class="internal-link" href="#contact">contact me</a>.
+                </p>
+            </section>
+            <div class="divider"></div>
+            <section>
+                <p class="section-header" id="projects">Selected Projects</p>
+                <p class="section-text">
+                    The goal of this site is to document not only my best projects, but also the projects that taught me the most.  To that end, the projects I list won't always be flashy.  They <em>will</em> have improved my skills, whether by helping me learn a technology, boosting my understanding of one I already knew, or making me think about coding in a new way. 
+                </p>
+                <p class="section-text">
+                    Without further ado, here are the winners:
+                </p>
+                <div class="project-grid">
+                    <div class="project-grid-item">Placeholder!</div>
+                    <div class="project-grid-item">Placeholder!</div>
+                </div>
+            </section>
+            <div class="divider"></div>
+            <section>
+                <p class="section-header" id="contact">Contact</p>
+                <p class="section-text">
+                    Want to talk about web development?  Science fiction?  My 208th game of XCOM?
+                </p>  
+                <p class="section-text">
+                    Contact me at the links below:
+                </p>
+                <div class="contact-links">
+                    <a class="contact-link" href="#"><i class="fab fa-github icon"></i>GitHub</a>
+                    <a class="contact-link" href="#"><i class="fas fa-envelope icon"></i>Email</a>
+                    <a class="contact-link" href="#"><i class="fab fa-twitter icon"></i>Twitter</a>
+                </div>
+            </section>  
+        </main>
+        <footer>
+            &copy; 2018 Claire Hornig
+        </footer>
+    </body>
+    <script>
+        let animatedElems = document.getElementsByClassName("animated");
+      
+        let checkAnim = setInterval(function() {
+            if (window.pageYOffset > 300) {
+                for (let i = 0; i < animatedElems.length; i++) {
+                    animatedElems[i].style.opacity = "1";
+                    animatedElems[i].style.animationDuration = "0s";
+                }
+                clearInterval(checkAnim);
+            }
+        }, 20);
+    </script> 
+</html>
