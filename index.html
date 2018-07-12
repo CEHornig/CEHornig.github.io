@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">.
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oxygen">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -18,17 +19,8 @@
             </span>
         </div>
         <main>
-        
-        
-        <!-- Optimize CSS
-         Stop the flickers?
-         And don't forget responsive design
-         And section elements, etc.
-        -->
-        
-        
             <div class="see-below animated">Learn more about me below...</div> 
-            <div class="divider"></div>
+            <div class="divider animated" id="first-divider"></div>
             <section>
                 <p class="section-header" id="about-me">About Me</p>
                 <img src="img/me.jpg">
@@ -36,7 +28,7 @@
                     I'm a web developer, writer, gamer, and unabashed nerd from New Hampshire.  I know HTML, CSS, JavaScript, and am familiar with Bootstrap, AJAX, and Sass.  I believe the key to creating good content is understanding what makes content good: not just how it works, but why.
                 </p>
                 <p class="section-text">
-                    My hobbies include reading, weight-lifting, and playing XCOM for the 208th time.  I really like to talk about '50s sci-fi movies and Battlestar Galactica.  If you would like to talk to me about '50s sci-fi movies and Battlestar Galactica–or, of course, web development–feel free to <a class="internal-link" href="#contact">contact me</a>.
+                    My hobbies include reading, weight-lifting, and playing XCOM for the 208th time.  I really like to talk about '50s sci-fi movies and Battlestar Galactica.  If you also like to talk about '50s sci-fi movies and Battlestar Galactica – or, of course, web development – feel free to <a class="internal-link" href="#contact">contact me</a>.
                 </p>
             </section>
             <div class="divider"></div>
@@ -63,9 +55,15 @@
                     Contact me at the links below:
                 </p>
                 <div class="contact-links">
-                    <a class="contact-link" href="#"><i class="fab fa-github icon"></i>GitHub</a>
-                    <a class="contact-link" href="#"><i class="fas fa-envelope icon"></i>Email</a>
-                    <a class="contact-link" href="#"><i class="fab fa-twitter icon"></i>Twitter</a>
+                    <div class="link-wrapper">
+                        <a class="contact-link" href="#"><i class="fab fa-github icon"></i>GitHub</a>
+                    </div>
+                    <div class="link-wrapper">
+                        <a class="contact-link" href="#"><i class="fas fa-envelope icon"></i>Email</a>
+                    </div>
+                    <div class="link-wrapper">
+                        <a class="contact-link" href="#"><i class="fab fa-twitter icon"></i>Twitter</a>
+                    </div>
                 </div>
             </section>  
         </main>
