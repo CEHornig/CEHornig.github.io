@@ -177,11 +177,11 @@ em {
     color: #577dba;
 }
 
-.contact-link:hover .fab {
+.contact-link:hover .fas {
     color: inherit;
 }
 
-.contact-link:hover .fas {
+.contact-link:hover .fa {
     color: inherit;
 }
 
@@ -240,17 +240,24 @@ footer {
     flex-direction: column;
     justify-content: center;
     
+    margin: auto;
+    
+    width: 400px;
+    max-width: 100%;
+    
     padding-top: 35px;
 }
     
 .link-wrapper {
-    width: 100%;
+    margin: auto;
 }
     
 .contact-link {  
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    max-width: 100px;
     
     margin: 20px 0px;
     
