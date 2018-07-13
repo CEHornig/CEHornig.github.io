@@ -92,7 +92,9 @@ nav {
     
     font-size: 20px;
     text-align: center;
-    
+}
+
+.fade-in-wrapper {
     opacity: 0;
     
     animation-name: fade-in;
@@ -109,15 +111,6 @@ nav {
     width: 300px;
     height: 4px;
     background: #344975;
-}
-
-#first-divider {
-    opacity: 0;
-    
-    animation-name: fade-in;
-    animation-duration: 2s;
-    animation-delay: 6s;
-    animation-fill-mode: forwards;
 }
 
 section {
@@ -140,12 +133,12 @@ section {
     text-align: center;
 }
 
-img {
+.photo {
     display: block;
     margin: 0px auto 30px auto;
     
     width: 200px;
-    height: 200px;
+    height: auto;
     border-radius: 100px;
     
     max-width: 100%;
@@ -209,7 +202,37 @@ footer {
     flex-direction: column;
     justify-content: center;
     
-    align-items: center;
+    grid-gap: 30px;
+}
+
+.project-grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-grid-image {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    
+    margin: 0px auto 20px auto;
+    
+    border-radius: 100px;
+    border: 2px solid black;
+}
+
+.project-grid-text {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+    
+    color: black;
+    text-align: center;
+}
+
+.project-link {
+    text-decoration: none;
 }
     
 .contact-links {

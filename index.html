@@ -15,73 +15,86 @@
         </nav>    
         <div class="welcome-div animated">
             <span class="welcome-text-large animated">Welcome!</span>
-            <span class="welcome-text-small animated">I'm Claire, a web developer with a passion for making cool things and learning cool things.
+            <span class="welcome-text-small animated">
+                I'm Claire, a web developer with a passion for making cool things and learning cool things.
             </span>
         </div>
         <main>
-            <div class="see-below animated">Learn more about me below...</div> 
-            <div class="divider animated" id="first-divider"></div>
-            <section>
-                <p class="section-header" id="about-me">About Me</p>
-                <img src="img/me.jpg">
-                <p class="section-text">
-                    I'm a web developer, writer, gamer, and unabashed nerd from New Hampshire.  I know HTML, CSS, JavaScript, and am familiar with Bootstrap, AJAX, and Sass.  I believe the key to creating good content is understanding what makes content good: not just how it works, but why.
-                </p>
-                <p class="section-text">
-                    My hobbies include reading, weight-lifting, and playing XCOM for the 208th time.  I really like to talk about '50s sci-fi movies and Battlestar Galactica.  If you also like to talk about '50s sci-fi movies and Battlestar Galactica – or, of course, web development – feel free to <a class="internal-link" href="#contact">contact me</a>.
-                </p>
-            </section>
-            <div class="divider"></div>
-            <section>
-                <p class="section-header" id="projects">Selected Projects</p>
-                <p class="section-text">
-                    The goal of this site is to document not only my best projects, but also the projects that taught me the most.  To that end, the projects I list won't always be flashy.  They <em>will</em> have improved my skills, whether by helping me learn a technology, boosting my understanding of one I already knew, or making me think about coding in a new way. 
-                </p>
-                <p class="section-text">
-                    Without further ado, here are the winners:
-                </p>
-                <div class="project-grid">
-                    <div class="project-grid-item">Placeholder!</div>
-                    <div class="project-grid-item">Placeholder!</div>
-                </div>
-            </section>
-            <div class="divider"></div>
-            <section>
-                <p class="section-header" id="contact">Contact</p>
-                <p class="section-text">
-                    Want to talk about web development?  Science fiction?  My 208th game of XCOM?
-                </p>  
-                <p class="section-text">
-                    Contact me at the links below:
-                </p>
-                <div class="contact-links">
-                    <div class="link-wrapper">
-                        <a class="contact-link" href="#"><i class="fab fa-github icon"></i>GitHub</a>
+            <div class="fade-in-wrapper animated">
+                <div class="see-below">Learn more about me below...</div> 
+                <div class="divider"></div>
+                <section>
+                    <p class="section-header" id="about-me">About Me</p>
+                    <img class="photo" src="img/me.png">
+                    <p class="section-text">
+                        I'm a web developer, writer, gamer, and unabashed nerd from New Hampshire.  I know HTML, CSS, JavaScript, and am familiar with Bootstrap, AJAX, and Sass.  I believe the key to creating good content is understanding what makes content good: not just how it works, but why.
+                    </p>
+                    <p class="section-text">
+                        My hobbies include reading, weight-lifting, and playing XCOM for the 208th time.  I really like to talk about '50s sci-fi movies and Battlestar Galactica.  If you also like to talk about '50s sci-fi movies and Battlestar Galactica – or, of course, web development – feel free to <a class="internal-link" href="#contact">contact me</a>.
+                    </p>
+                </section>
+                <div class="divider"></div>
+                <section>
+                    <p class="section-header" id="projects">Selected Projects</p>
+                    <p class="section-text">
+                        The goal of this site is to document not only my best projects, but also the projects that taught me the most.  To that end, the projects I list won't always be flashy.  They <em>will</em> have improved my skills, whether by helping me learn a technology, boosting my understanding of one I already knew, or making me think about coding in a new way. 
+                    </p>
+                    <p class="section-text">
+                        Without further ado, here are the winners:
+                    </p>
+                    <div class="project-grid">
+                        <div class="project-grid-item">
+                            <a class="project-link" href="https://cehornig.github.io/tech-doc" target="_blank">
+                                <img class="project-grid-image" src="img/doc.png" alt="">
+                                <span class="project-grid-text">Technical Documentation Page</span>
+                            </a>
+                        </div>
+                        <div class="project-grid-item">
+                            <a class="project-link" href="https://cehornig.github.io/tech-doc" target="_blank">
+                                <img class="project-grid-image" src="img/product.png" alt="">
+                                <span class="project-grid-text">Product Placement Page</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="link-wrapper">
-                        <a class="contact-link" href="#"><i class="fas fa-envelope icon"></i>Email</a>
+                </section>
+                <div class="divider"></div>
+                <section>
+                    <p class="section-header" id="contact">Contact</p>
+                    <p class="section-text">
+                        Want to talk about web development?  Science fiction?  My 208th game of XCOM?
+                    </p>  
+                    <p class="section-text">
+                        Contact me at the links below:
+                    </p>
+                    <div class="contact-links">
+                        <div class="link-wrapper">
+                            <a class="contact-link" href="#"><i class="fab fa-github icon"></i>GitHub</a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a class="contact-link" href="#"><i class="fas fa-envelope icon"></i>Email</a>
+                        </div>
+                        <div class="link-wrapper">
+                            <a class="contact-link" href="#"><i class="fab fa-twitter icon"></i>Twitter</a>
+                        </div>
                     </div>
-                    <div class="link-wrapper">
-                        <a class="contact-link" href="#"><i class="fab fa-twitter icon"></i>Twitter</a>
-                    </div>
-                </div>
-            </section>  
+                </section>  
+            </div>
         </main>
-        <footer>
-            &copy; 2018 Claire Hornig
-        </footer>
-    </body>
-    <script>
-        let animatedElems = document.getElementsByClassName("animated");
+    <footer>
+        &copy; 2018 Claire Hornig
+    </footer>
+</body>
+<script>
+    let animatedElems = document.getElementsByClassName("animated");
       
-        let checkAnim = setInterval(function() {
-            if (window.pageYOffset > 300) {
-                for (let i = 0; i < animatedElems.length; i++) {
-                    animatedElems[i].style.opacity = "1";
-                    animatedElems[i].style.animationDuration = "0s";
-                }
-                clearInterval(checkAnim);
+    let checkAnim = setInterval(function() {
+        if (window.pageYOffset > 300) {
+            for (let i = 0; i < animatedElems.length; i++) {
+                animatedElems[i].style.opacity = "1";
+                animatedElems[i].style.animationDuration = "0s";
             }
-        }, 20);
-    </script> 
+            clearInterval(checkAnim);
+        }
+    }, 20);
+</script> 
 </html>
