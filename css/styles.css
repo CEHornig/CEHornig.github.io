@@ -167,6 +167,10 @@ em {
     font-weight: bolder;
 }
 
+.odd-grid-item {
+    padding-top: 35px;
+}
+
 .project-grid-item {
     padding-top: 35px;
     
