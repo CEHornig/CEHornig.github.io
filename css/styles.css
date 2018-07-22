@@ -167,16 +167,6 @@ em {
     font-weight: bolder;
 }
 
-.odd-grid-item {
-    padding-top: 35px;
-}
-
-.project-grid-item {
-    padding-top: 35px;
-    
-    color: black;
-}
-
 .contact-link:hover {
     color: #577dba;
 }
@@ -213,6 +203,12 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
+    position: relative;
+    
+    padding-top: 35px;
+    
+    color: black;
 }
 
 .project-grid-image {
@@ -224,6 +220,13 @@ footer {
     
     border-radius: 100px;
     border: 2px solid black;
+}
+
+.odd-grid-item {
+    position: relative;
+    margin: auto;
+    
+    max-width: 205px;
 }
 
 .project-grid-text {
@@ -290,6 +293,7 @@ footer {
         grid-template-columns: 1fr 1fr;
     
         justify-items: center;
+        align-items: flex-start;
     
         padding: 10px;
     }
