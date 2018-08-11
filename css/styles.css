@@ -218,6 +218,8 @@ footer {
     
     margin: 0px auto 20px auto;
     
+    background: black;
+    
     border-radius: 100px;
     border: 2px solid black;
 }
